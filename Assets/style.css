@@ -1,0 +1,10 @@
+:root {}
+
+nav {
+    display: flex;
+}
+
+h1 {
+    font-size: 50px;
+    color: antiquewhite;
+}
