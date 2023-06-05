@@ -1,10 +1,190 @@
-:root {}
+:root {
+    :
+}
 
-nav {
-    display: flex;
+
+/*General Styles & Typography*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+img {
+    height: 100px;
+    width: 100px
 }
 
 h1 {
     font-size: 50px;
-    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+}
+
+/*Header & Main Navigation*/
+
+header {
+    position: static;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    /*z-index: 1;*/
+
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    position: relative;
+    width: 100%
+}
+
+.nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    margin: 0px 60px
+}
+
+
+/*Main*/
+
+main {
+    background-color: whitesmoke;
+    top: 120px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: static;
+    /* to make tabs headed
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    */
+}
+
+/*About Me Section*/
+.bio-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 60px;
+}
+
+.biography {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+/*Experience Section*/
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.experience-title {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 60px;
+    align-items: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.experience-card {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: aliceblue;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+/*Projects Section*/
+.projects-title {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 60px;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 2%;
+    padding: 20px;
+
+}
+
+.project-card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    justify-content: center;
+}
+
+.projects img {
+    height: 200px;
+    width: 300px
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    justify-content: center;
 }
