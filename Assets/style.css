@@ -10,12 +10,12 @@
 
 a {
     text-decoration: none;
-    color: black
+    color: rgb(255, 255, 255)
 }
 
 img {
-    height: 100px;
-    width: 100px
+    height: 200px;
+    width: 200px
 }
 
 h1 {
@@ -23,6 +23,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-basis: 30%;
+    color: rgb(255, 255, 255)
 }
 
 h2 {
@@ -43,15 +44,25 @@ header {
     left: 0px;
     right: 0px;
     top: 0px;
-    /*z-index: 1;*/
 
 }
 
+header img {
+    width: 100vw;
+    height: 1000px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    width: -webkit-fill-available;
+}
+
 .header {
-    background-color: white;
     display: flex;
-    position: relative;
-    width: 100%
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    width: -webkit-fill-available;
 }
 
 .nav {
@@ -61,10 +72,11 @@ header {
     align-items: center;
     list-style-type: none;
     flex-wrap: wrap;
+
 }
 
 .nav li {
-    margin: 0px 60px
+    margin: 0px 60px;
 }
 
 
@@ -72,11 +84,12 @@ header {
 
 main {
     background-color: whitesmoke;
-    top: 120px;
+    top: 1000px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    position: static;
+    position: relative;
+    padding: 40px;
     /* to make tabs headed
         display: flex;
     flex-wrap: wrap;
@@ -84,6 +97,7 @@ main {
     align-items: center;
     flex-direction: column;
     */
+
 }
 
 /*About Me Section*/
@@ -99,20 +113,40 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0px 200px 40px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #b9b4b4;
+    border-radius: 2%;
     padding: 20px;
+}
 
+.biography p {
+    padding: 0px 75px;
+}
+
+.biography div {
+    padding: 0px 100px;
+}
+
+.biography img {
+    width: 300px;
+    height: 300px
 }
 
 /*Experience Section*/
+
 .experience {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: antiquewhite;
-    padding: 20px;
+    background-color: white;
+    padding: 10px 0px 35px;
+    border-radius: 10px;
+
 }
 
 .experience-title {
@@ -121,25 +155,45 @@ main {
     background-color: white;
     height: 60px;
     align-items: center;
-    padding: 20px;
-    background-color: antiquewhite;
+    padding: 35px 0px 30px 0px;
+    border-radius: 10px;
+}
+
+.experience-title h2 {
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #b9b4b4;
+    border-radius: 2%;
+    padding: 12px;
 }
 
 .experience-card {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    align-content: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     width: 400px;
     height: 400px;
     border-style: dashed;
     border-width: 5px;
-    border-color: aliceblue;
+    border-color: #b9b4b4;
+    border-radius: 2%;
+    padding: 60px;
+
+    /*
+    border-style: dashed;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
     border-radius: 10%;
-    padding: 20px;
+    padding: 20px; */
 }
+
+.experience-card img {
+    width: 150px;
+    height: 150px
+}
+
 
 /*Projects Section*/
 .projects-title {
@@ -149,17 +203,18 @@ main {
     height: 60px;
     align-items: center;
     padding: 20px;
-
 }
 
+
 .projects {
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: whitesmoke;
     border-style: dashed;
     border-width: 5px;
-    border-color: black;
+    border-color: #b9b4b4;
     border-radius: 2%;
     padding: 20px;
 
@@ -168,6 +223,7 @@ main {
 .project-card {
     width: 300px;
     height: 300px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -178,13 +234,19 @@ main {
 
 .projects img {
     height: 200px;
-    width: 300px
+    width: 300px;
+    border-radius: 10px
 }
 
 /*Footer*/
 footer {
     display: flex;
-    align-items: stretch;
-    position: relative;
+    position: absolute;
+    bottom: -1900px;
+    flex-wrap: nowrap;
+    align-content: center;
+    right: 45%;
+    /* left: 50%; */
     justify-content: center;
+
 }
