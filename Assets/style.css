@@ -9,7 +9,8 @@
     --black: rgb(0 0 0);
     --fullwidth: -webkit-fill-available;
     --border: dashed;
-
+    --bordercurve: 10px;
+    --cardborder: 10px
 }
 
 
@@ -178,12 +179,22 @@ main {
     top: -40px;
 }
 
+.projects h3 {
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    background-color: var(--purple);
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: var(--bordercurve);
+}
+
 .project-card-1 {
     color: var(--white);
     text-align: center;
     border-style: solid;
     border-color: var(--purple);
-    border-width: 10px;
+    border-width: var(--cardborder);
     margin: 10px 10px 50px 10px;
     flex-shrink: 1;
     flex-grow: 1;
@@ -208,6 +219,7 @@ main {
     justify-content: space-around;
     height: 150px;
     padding: 0px 100px;
+    border-radius: var(--bordercurve);
 }
 
 .project-card {
@@ -216,7 +228,7 @@ main {
     text-align: center;
     border-style: solid;
     border-color: var(--purple);
-    border-width: 10px;
+    border-width: var(--cardborder);
     margin: 10px 10px 50px 10px;
     flex-shrink: 1;
     flex-grow: 1;
@@ -244,7 +256,7 @@ main {
 .projects img {
     height: 200px;
     width: 300px;
-    border-radius: 10px
+    border-radius: var(--bordercurve)
 }
 
 
