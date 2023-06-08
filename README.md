@@ -18,13 +18,13 @@ Please navigate to: https://p-h-davies.github.io/Professional-Portfolio/.
 To navigate throughout the site, you have the option of using the navigation bar in the header or by scrolling. 
 
 This website offers responsive options. To view the desktop version, use a viewport with over 1000px width:
-![screenshot of desktop view](assets/images/desktop.png)
+![screenshot of desktop view](Assets/Images/desktop.png)
 
 To view the tablet version, use a viewport with a width between 668px-1000px:
-![screenshot of tablet view](assets/images/tab.png)
+![screenshot of tablet view](Assets/Images/tab.png)
 
 To view the mobile version, use a viewport with 667px or less:
-![screenshot of mobile view](assets/images/mobile.png)
+![screenshot of mobile view](Assets/Images/mobile.png)
 
 
 ## Credits
